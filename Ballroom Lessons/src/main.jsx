@@ -5,7 +5,7 @@ import './index.css'
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Booking from './Pages/Booking';
-import Prices from './Pages/Pricing';
+import Pricing from './Pages/Pricing';
 
 
 createRoot(document.getElementById('root')).render(

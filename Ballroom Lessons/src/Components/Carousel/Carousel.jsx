@@ -16,13 +16,13 @@ const Carousel = () => {
     }
 
     return(
-        <div className='carousel'>
-            <button className='prev' onClick={handlePrev}>
-                <i class='bx bx-left-arrow-alt' ></i>
+        <div className='flex justify-center items-center p-1.5'>
+            <button className='mr-6' onClick={handlePrev}>
+                <i class='bx bx-left-arrow-alt' >left</i>
             </button>
             <p>{index}num</p>
-            <button className='forward' onClick={handleNext}>
-                <i class='bx bx-right-arrow-alt' ></i>
+            <button className='ml-6' onClick={handleNext}>
+                <i class='bx bx-right-arrow-alt' >right</i>
             </button>
             
         </div>

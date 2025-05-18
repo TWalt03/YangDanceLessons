@@ -3,28 +3,31 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="nav bg-blue-300 flex justify-between items-center p-4">
+    <div className="flex justify-between bg-blue-300 p-4">
       <div>
-        <h1 className='italic m-4 mr-8 font-bold text-3xl bg-amber-50'> Yang Ballroom Dance</h1>
+        <h1 className='text-3xl italic font-bold'> Yang Ballroom Dance</h1>
       </div>
-      <ul className= 'flex justify-center items-center gap-8 '>
-        <Link to="/" > 
-          <li>Home</li>
-        </Link>
-
-        <Link to= '/About'>
-          <li >About</li>
-        </Link>
-
-        <Link to= '/Prices' >
-          <li >Prices</li>
-        </Link>
-        <div className = 'ml-auto mr-4 rounded-sm' >
-          <Link to= '/Booking' style={{ textDecoration: 'none', color: 'black'}} >
-            <button className='border rounded-2xl' >Book Here</button>
+      <div className="flex ml-auto items-center">
+        <ul className= 'flex flex-grow justify-center items-center space-x-6 text-xl gap-8 font-semibold '> 
+          <Link to="/" > 
+            <li>Home</li>
           </Link>
-        </div>
-      </ul>
+
+          <Link to= '/About'>
+            <li >About</li>
+          </Link>
+
+          <Link to= '/Prices' >
+            <li>Prices</li>
+          </Link>
+        </ul>
+      </div>
+      <div className="ml-auto" >
+        <Link to= '/Booking'  >
+          <button className=' p-1.5 border rounded-full' >Book Here</button>
+        </Link>
+      </div>
+      
     </div>
   );
 }
