@@ -1,9 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 const Carousel = () => {
+    const contentArray = [
+        {
+            index: 0,
+            title: 'Flamenco Dance',
+        },
+        {
+            index: 1,
+            title: 'Latin Dance',
+            
+        },
+        // Add more content objects as needed
+    ]
     const [ index, setIndex ] = useState(0);
-    const length = 12;
+    const length = contentArray.length;
+    const [isPaused, setIsPaused] = useState(false);
     
     const handlePrev = () => {
         const newIndex = index - 1;
@@ -15,16 +28,27 @@ const Carousel = () => {
         setIndex(newIndex >= length ? 0 : newIndex);
     }
 
+    useEffect(() => {
+        if (isPaused) return;
+        const interval = setInterval(() => {
+            handleNext();
+        }, 5000); // Change slide every 3 seconds
+
+        return () => clearInterval(interval); // Cleanup interval on unmount
+    });
+
     return(
-        <div className='flex justify-center items-center p-1.5'>
-            <button className='mr-6' onClick={handlePrev}>
-                <i class='bx bx-left-arrow-alt' >left</i>
-            </button>
-            <p>{index}num</p>
-            <button className='ml-6' onClick={handleNext}>
-                <i class='bx bx-right-arrow-alt' >right</i>
-            </button>
-            
+        <div onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} className='flex flex-col justify-center items-center  rounded-lg p-4'>
+            <div className='flex justify-center items-center p-1.5'>
+                <button className='mr-6 text-3xl border-2 rounded-lg hover:bg-gray-300 hover:ease-in-out hover:duration-100' onClick={handlePrev}>
+                    <i className='bx bx-left-arrow-alt'  ></i>
+                </button>
+                <p>{contentArray[index].title}</p>
+                <button className='ml-6 text-3xl border-2 rounded-lg hover:bg-gray-300 hover:ease-in-out hover:duration-100' onClick={handleNext}>
+                    <i className='bx bx-right-arrow-alt' ></i>
+                </button>
+                
+            </div>
         </div>
     )
 }
