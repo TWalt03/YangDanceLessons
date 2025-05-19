@@ -5,14 +5,66 @@ const Carousel = () => {
     const contentArray = [
         {
             index: 0,
-            title: 'Flamenco Dance',
+            title: 'American Rhythm & Smooth Styles',
+            // Image:,
         },
         {
             index: 1,
-            title: 'Latin Dance',
+            title: 'International Latin & Standard Styles',
+            // Image:,
+        },
+        {
+            index: 2,
+            title: 'Foxtrot',
+            // Image:,
+        },
+        {
+            index: 3,
+            title: 'Waltz',
+            // Image:,
+        },
+        {
+            index: 4,
+            title: 'Tango',
+            // Image:,
+        },
+        {
+            index: 5,
+            title: 'Quickstep',
+            // Image:,
+        },
+        {
+            index: 6,
+            title: 'Samba',
+            // Image:,
+        },
+        {
+            index: 7,
+            title: 'Cha Cha',
+            // Image:,
+        },
+        {
+            index: 8,
+            title: 'Rumba',
+            // Image: 
             
         },
-        // Add more content objects as needed
+        {
+            index: 9,
+            title: 'Salsa/Mambo',
+            // Image:,
+        },
+        {
+            index: 10,
+            title: 'Jive',
+            // Image:,
+        },
+        {
+            index: 11,
+            title: 'American/International Rumba',
+            // Image:
+        },
+        
     ]
     const [ index, setIndex ] = useState(0);
     const length = contentArray.length;
