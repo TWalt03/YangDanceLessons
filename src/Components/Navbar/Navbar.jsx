@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="flex justify-between bg-blue-300 p-4">
+    <div className="flex justify-between big-white-900 p-4 border-b-2 border-gray-300 bg-white shadow-md">
       <div>
         <h1 className='text-3xl italic font-bold'> Yang Ballroom Dance</h1>
       </div>
