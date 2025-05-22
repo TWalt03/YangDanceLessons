@@ -92,27 +92,27 @@ const Carousel = () => {
     <div
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      className="flex justify-center items-center rounded-lg p-4"
+      className="relative  w-full max-w-4xl mx-auto my-8 overscroll-auto"
     >
-      <div className="flex justify-center items-center p-1.5">
+      <div className="flex flex-row justify-center items-center p-1.5">
         <button
-          className=" mr-16 text-3xl border-2 rounded-lg hover:bg-gray-300 hover:ease-in-out hover:duration-200"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-3xl border-2 rounded-lg hover:bg-gray-300 hover:ease-in-out hover:duration-200"
           onClick={handlePrev}
         >
           <i className="bx bx-left-arrow-alt"></i>
         </button>
-        <div className="flex flex-col justify-center items-center ">
+        <div className="relative overflox-hidden h-64 flex flex-col justify-center max-w-100 items-center text-center ">
           <img
-            className="max-w-2xl max-h-80"
+            className="mt-8 mb-4 max-h-80"
             src={contentArray[index].image}
             alt={contentArray[index].title}
           />
-          <p className="text-3xl font-bold bg-white-100 rounded-sm hover:shadow-lg hover:bg-gray-100  hover:ease-in-out hover:duration-250 hover:border-.5">
+          <p className="text-3xl text-center font-bold bg-white-100 rounded-sm hover:shadow-lg hover:bg-gray-100  hover:ease-in-out hover:duration-250 hover:border-.5">
             {contentArray[index].title}
           </p>
         </div>
         <button
-          className="ml-16 text-3xl border-2 rounded-lg hover:bg-gray-300 hover:ease-in-out hover:duration-200"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-3xl  border-2 rounded-lg hover:bg-gray-300 hover:ease-in-out hover:duration-200"
           onClick={handleNext}
         >
           <i className="bx bx-right-arrow-alt"></i>
