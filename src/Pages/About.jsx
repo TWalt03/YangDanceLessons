@@ -9,13 +9,14 @@ function About() {
       <h1 className="text-5xl mt-15 sm:mb-1 mb-8 max-w-120 m-auto font-bold flex justify-center rounded-lg ">
         About Jason Yang
       </h1>
-      <div className=" p-12 grid grid-cols-2 table-auto items-center justify-center  text-justify shadow-xl">
+      {/* grid grid-cols-2 table-auto */}
+      <div className=" p-12 flex flex-wrap items-center justify-center  text-justify shadow-xl">
         <img
-          className="flex grid-cols-2 items-center m-auto p-4 hover:shadow-md hover:bg-gray-100 hover:ease-in-out hover:duration-200"
+          className="flex grid-cols-2 items-center max-w-4xl max-h-2xl m-auto p-4 hover:shadow-md hover:bg-gray-100 hover:ease-in-out hover:duration-200"
           src="src/assets/aboutpic.JPG"
           alt="Jason Yang receiving reward for dance competition"
         />
-        <p className="ml-5 p-2 rounded-lg hover:shadow-md hover:bg-gray-100 hover:ease-in-out hover:duration-200 ">
+        <p className=" text-md ml-5 p-2 max-w-6xl rounded-lg hover:shadow-md hover:bg-gray-100 hover:ease-in-out hover:duration-200 ">
           Jason Yang is a collegiate Ballroom dancer proficient in the Standard,
           Smooth, Latin, and Rhythm Ballroom dance styles. As one of the head
           coaches of the SUNY Binghamton Ballroom dance team, Jason has placed
