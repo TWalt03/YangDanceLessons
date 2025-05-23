@@ -5,64 +5,62 @@ const Carousel = () => {
     {
       index: 0,
       title: "American Rhythm & Smooth Styles",
-      // image:,
+      image:'src/Components/Carousel/carAssets/american.jpeg',
     },
     {
       index: 1,
       title: "International Latin & Standard Styles",
-      // image:,
+      image:'src/Components/Carousel/carAssets/latindance.jpeg',
     },
     {
       index: 2,
       title: "Foxtrot",
-      // image:,
+      image:"src/Components/Carousel/carAssets/foxtrot.jpeg",
     },
     {
       index: 3,
       title: "Waltz",
-      image:
-        "https://lh6.googleusercontent.com/3ejCFQqCXS5eRsyoG8LeyYMsJBImK1O9I12UA815tt8tdrj1m3wy1MAW-fvLBE_xpj5rGpg_puJGPTpSTCGxSuY=w16383",
+      image:"src/Components/Carousel/carAssets/waltz.jpeg",
     },
     {
       index: 4,
       title: "Tango",
-      image:
-        "https://lh5.googleusercontent.com/PrNGJZcKObptW-kcY4siVnKAUKvLwYTL5lLm7Kjycc1lM1gkXiQJtOdK_0--3VrJ8D-xzp4nu0mfrvUXeg7n7_0=w16383",
+      image:"src/Components/Carousel/carAssets/tango.jpeg",
     },
     {
       index: 5,
       title: "Quickstep",
-      // image:,
+      image:'src/Components/Carousel/carAssets/quickstep.jpeg',
     },
     {
       index: 6,
       title: "Samba",
-      // image:,
+      image:'src/Components/Carousel/carAssets/samba.jpeg',
     },
     {
       index: 7,
       title: "Cha Cha",
-      image: "src/Components/Carousel/chacha.jpeg",
+      image: "src/Components/Carousel/carAssets/chacha1.jpeg",
     },
     {
       index: 8,
       title: "Rumba",
-      // image:
+      image:'src/Components/Carousel/carAssets/rumba2.jpeg',
     },
     {
       index: 9,
       title: "Salsa/Mambo",
-      // image:,
+      image:'src/Components/Carousel/carAssets/salsa.jpeg',
     },
     {
       index: 10,
       title: "Jive",
-      image: "src/Components/Carousel/jive.jpeg",
+      image: "src/Components/Carousel/carAssets/jive.jpeg",
     },
     {
       index: 11,
       title: "American/International Rumba",
-      image: "src/Components/Carousel/Rumba.jpeg",
+      image: "src/Components/Carousel/carAssets/rumba3.jpeg",
     },
   ];
   const [index, setIndex] = useState(0);
@@ -92,7 +90,7 @@ const Carousel = () => {
     <div
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      className="relative  w-full max-w-4xl mx-auto my-8 overscroll-auto"
+      className="relative w-full max-w-200 mx-auto mt-24 my-8 overscroll-auto"
     >
       <div className="flex flex-row justify-center items-center p-1.5">
         <button
@@ -107,7 +105,7 @@ const Carousel = () => {
             src={contentArray[index].image}
             alt={contentArray[index].title}
           />
-          <p className="text-3xl text-center font-bold bg-white-100 rounded-sm hover:shadow-lg hover:bg-gray-100  hover:ease-in-out hover:duration-250 hover:border-.5">
+          <p className="text-3xl mb-12  text-center font-bold bg-white-100 rounded-sm hover:shadow-lg hover:bg-gray-100  hover:ease-in-out hover:duration-250 hover:border-.5">
             {contentArray[index].title}
           </p>
         </div>

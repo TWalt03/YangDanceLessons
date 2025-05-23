@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Booking from './Pages/Booking';
 import Pricing from './Pages/Pricing';
+import Gallery from './Pages/Gallery';
 
 
 createRoot(document.getElementById('root')).render(
@@ -16,7 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/About' element = {<About/>}/>
         <Route path ='/Prices' element = {<Pricing/>}/>
         <Route path ='/Booking' element = {<Booking/>}/>
-        <Route/>
+        <Route path ='/Gallery' element = {<Gallery/>}/>
       </Routes>
     </Router>
   </StrictMode>,

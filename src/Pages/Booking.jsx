@@ -8,7 +8,7 @@ function Booking() {
     <div>
       <Navbar />
       <div className="flex flex-col items-center justify-center mt-10">
-        <p className="text-xl text-center"><strong>***</strong>Currently booking through the site is not available, for now please reach out to us to book.<strong>***</strong></p>
+        <p className="text-xl text-center mt-30 "><strong>***</strong>Currently booking through the site is not available, for now please reach out to us to book.<strong>***</strong></p>
 
       </div>
         <div className="flex flex-col items-center justify-center mt-10 border-1 border-gray-300 bg-white shadow-md p-6 rounded-lg">
