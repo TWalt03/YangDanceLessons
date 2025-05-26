@@ -7,7 +7,7 @@ function Prices() {
       <Navbar />
       <div className="flex flex-col items-center justify-center min-h-screen  text-center max-w-4xl mx-auto p-4">
         <h1 className="text-5xl m-16 mt-40 text-shadow-lg">Prices</h1>
-        <div className="shadow-lg w-full">
+        <div className="shadow-lg w-full bg-red-50">
           <h3 className="text-2xl font-bold underline m-6">
             Individual/Parter Private Lesson <strong>- ($45):</strong>
           </h3>
@@ -17,7 +17,7 @@ function Prices() {
             both dancers.{" "}
           </p>
         </div>
-        <div className="flex flex-col justify-center shadow-lg w-full">
+        <div className="flex flex-col justify-center shadow-lg w-full bg-red-50">
           <h3 className="text-2xl font-bold underline m-6">
             Group Private Lesson<strong>- ($75+):</strong>
           </h3>
@@ -29,7 +29,7 @@ function Prices() {
             rotate, or instructors may come in as substitute partners.{" "}
           </p>
         </div>
-        <div className="flex flex-col justify-center shadow-lg w-full">
+        <div className="flex flex-col justify-center bg-red-50 shadow-xl w-full ">
           <h3 className="text-2xl font-bold underline m-6">
             Choreography and Routine Lessons - (TBD):{" "}
           </h3>
@@ -42,7 +42,7 @@ function Prices() {
             routine complexity
           </p>
         </div>
-        <div className="flex flex-col justify-center shadow-lg w-full">
+        <div className="flex flex-col justify-center shadow-lg w-full bg-red-50">
           <h3 className="text-2xl font-bold underline m-6">
             Wedding Day/Special Event Package - (TBD):
           </h3>
@@ -54,14 +54,14 @@ function Prices() {
             dancer's discretion.
           </p>
         </div>
-        <div className="flex flex-col justify-center shadow-lg w-full">
+        <div className="flex flex-col justify-center shadow-lg w-full bg-red-50">
           <h3 className="text-2xl font-bold underline m-6">Demo Lesson</h3>
           <p className="m-auto mb-6 p-6 text-lg text-center sm:max-w-xl hover:shadow-lg hover:bg-gray-100 hover:ease-in-out hover:duration-200 rounded-xl">
             One-time introductory lesson for those who haven't taken a lesson
             with Yang Ballroom and Wedding Dance before.
           </p>
         </div>
-        <div className="flex flex-col justify-center shadow-md w-full">
+        <div className="flex flex-col justify-center shadow-md w-full bg-red-50">
           <h1 className="text-2xl font-extrabold m-6 mt-10">
             Lesson Location Disclaimer
           </h1>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className=" fixed top-0 right-0 left-0 z-50 flex justify-between bg-gray-200 p-4 border-b-2 border-gray-300 shadow-md">
+    <div className=" fixed top-0 right-0 left-0 z-50 flex justify-between bg-white p-4 border-b-2 border-gray-300 shadow-md">
       <div>
         <h1 className='whitespace-nowrap mt-1 text-lg sm:text-2xl sm:mt-1.5 md:text-3xl md:mt-.25 italic font-bold'> Yang Ballroom Dance</h1>
       </div>
@@ -28,7 +28,7 @@ function Navbar() {
       </div>
       <div className="ml-auto" >
         <Link to= '/Booking'>
-          <button className='whitespace-nowrap font-bold text-md text-lg sm:text-xl sm:p-1.5 border mt-1 ml-2 rounded-lg sm:rounded-full hover:bg-gray-100 hover:shadow-lg' >Book Here</button>
+          <button className='whitespace-nowrap font-bold text-md sm:text-xl sm:p-2  border-2 mt-1 ml-2 rounded-lg sm:rounded-full hover:bg-gray-100 hover:shadow-lg' >Book Here</button>
         </Link>
       </div>
       
