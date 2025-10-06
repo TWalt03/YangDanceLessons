@@ -5,62 +5,62 @@ const Carousel = () => {
     {
       index: 0,
       title: "American Rhythm & Smooth Styles",
-      image:'src/Components/Carousel/carAssets/american.jpeg',
+      image:'/carousel/american.jpeg',
     },
     {
       index: 1,
       title: "International Latin & Standard Styles",
-      image:'src/Components/Carousel/carAssets/latindance.jpeg',
+      image:'/carousel/latindance.jpeg',
     },
     {
       index: 2,
       title: "Foxtrot",
-      image:"src/Components/Carousel/carAssets/foxtrot.jpeg",
+      image:'/carousel/foxtrot.jpeg',
     },
     {
       index: 3,
       title: "Waltz",
-      image:"src/Components/Carousel/carAssets/waltz.jpeg",
+      image:'/carousel/waltz.jpeg',
     },
     {
       index: 4,
       title: "Tango",
-      image:"src/Components/Carousel/carAssets/tango.jpeg",
+      image:'/carousel/tango.jpeg',
     },
     {
       index: 5,
       title: "Quickstep",
-      image:'src/Components/Carousel/carAssets/quickstep.jpeg',
+      image:'/carousel/quickstep.jpeg',
     },
     {
       index: 6,
       title: "Samba",
-      image:'src/Components/Carousel/carAssets/samba.jpeg',
+      image:'/carousel/samba.jpeg',
     },
     {
       index: 7,
       title: "Cha Cha",
-      image: "src/Components/Carousel/carAssets/chacha1.jpeg",
+      image: '/carousel/chacha1.jpeg',
     },
     {
       index: 8,
       title: "Rumba",
-      image:'src/Components/Carousel/carAssets/rumba2.jpeg',
+      image:'/carousel/rumba2.jpeg',
     },
     {
       index: 9,
       title: "Salsa/Mambo",
-      image:'src/Components/Carousel/carAssets/salsa.jpeg',
+      image:'/carousel/salsa.jpeg',
     },
     {
       index: 10,
       title: "Jive",
-      image: "src/Components/Carousel/carAssets/jive.jpeg",
+      image: '/carousel/jive.jpeg',
     },
     {
       index: 11,
       title: "American/International Rumba",
-      image: "src/Components/Carousel/carAssets/rumba3.jpeg",
+      image: '/carousel/rumba3.jpeg',
     },
   ];
   const [index, setIndex] = useState(0);

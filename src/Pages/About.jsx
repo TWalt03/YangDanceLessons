@@ -6,14 +6,14 @@ function About() {
   return (
     <div className=" overscroll-auto m-auto p-0">
       <Navbar />
-      <h1 className="text-5xl mt-15 sm:mb-1 mb-8 mt-30 max-w-120 m-auto font-bold flex justify-center rounded-lg ">
+      <h1 className="text-5xl  sm:mb-1 mb-8 mt-30 max-w-120 m-auto font-bold flex justify-center rounded-lg ">
         About Jason Yang
       </h1>
       {/* grid grid-cols-2 table-auto */}
       <div className=" p-12 flex flex-wrap items-center justify-center  text-justify shadow-xl">
         <img
           className="flex grid-cols-2 items-center max-w-4xl max-h-2xl m-auto p-4 hover:shadow-md hover:bg-gray-100 hover:ease-in-out hover:duration-200"
-          src="src/assets/aboutpic.JPG"
+          src="/assets/aboutpic.JPG"
           alt="Jason Yang receiving reward for dance competition"
         />
         <p className=" text-md ml-5 p-2 max-w-6xl rounded-lg hover:shadow-md hover:bg-gray-100 hover:ease-in-out hover:duration-200 ">
