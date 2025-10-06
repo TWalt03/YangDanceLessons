@@ -20,10 +20,6 @@ function Navbar() {
           <Link to= '/Prices' className=" mr-0 mb-0 p-1 sm:p-1 md:p-3 rounded-lg hover:bg-gray-100 hover:font-bolder hover:shadow-lg" >
             <li>Prices</li>
           </Link>
-
-          <Link to= '/Gallery' className="  mb-0 p-1 sm:p-1 md:p-3 rounded-lg hover:bg-gray-100 hover:font-bolder hover:shadow-lg" >
-            <li>Gallery</li>
-          </Link>
         </ul>
       </div>
       <div className="ml-auto" >
